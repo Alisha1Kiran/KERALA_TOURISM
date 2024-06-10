@@ -168,8 +168,8 @@
             <input type="tel" name="phNumber" id="phNumber" required pattern="[0-9]{10}" title="Phone number should be 10 digit numbers">
             <br><br>
             <label for="districts">District</label>
-            <input list="districts">
-            <datalist name="districts" id="districts" required>
+            <input list="districts" required>
+            <datalist name="districts" id="districts">
                 <option value="thiruvananthapuram"></option>
                 <option value="kollam"></option>
                 <option value="pathanamthitta"></option>
@@ -186,9 +186,13 @@
                 <option value="kasaragod"></option>
             </datalist>
             <br><br>
+            <label for="feedback"> Feedback / Message / Comment </label><br>
+            <textarea id="feedback" name="feedback" required rows="10" cols="40"></textarea>
+            <br><br>
             <button type="submit">Submit</button>
         </form>
     </section>
+    <br><br>
     <footer>
         Copyright
     </footer>
