@@ -1,0 +1,10 @@
+main{
+    background-image: url("images/mainBackground.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+}
+
+footer{
+    background-color: antiquewhite;
+}
