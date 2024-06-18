@@ -4,7 +4,23 @@ main{
     background-size: cover;
     background-position-x: center;
 }
+header{
+    display: flex;  
+    justify-content: space-between;
 
+}
+
+.nav-links{
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+    align-items: center;
+}
+
+.nav-link a{
+    text-decoration: none;
+    color: black;
+}
 footer{
     height: 50px;
     background-color: antiquewhite;
