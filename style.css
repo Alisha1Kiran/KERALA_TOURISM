@@ -1,3 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+}
+
 main{
     background-image: url("images/mainBackground.jpg");
     background-repeat: no-repeat;
@@ -72,6 +82,10 @@ nav{
     width: auto;
 }
 
+.mainHeading h1{
+    font-size: 4vw;
+}
+
 .mhbutton{
     display: flex;
     gap: 20px;
@@ -82,7 +96,7 @@ nav{
     flex-direction: column;
     align-items: center;
     background-color: rgb(229, 229, 245);
-    width:auto;
+    width: 100vw;
     margin-top: 20px;
 }
 
@@ -92,7 +106,7 @@ nav{
 
 .des-item{
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 10px;
     padding: 10px;
 }
@@ -120,6 +134,7 @@ nav{
     width: auto;
     height: 50px;
     background-color: rgba(3, 33, 109, 0.5);
+    margin-top: 10px;
 }
 
 .des-button a{
@@ -133,10 +148,12 @@ nav{
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-color: rgba(3, 33, 109, 0.5);
 }
 
 .notes h1{
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .notes img{
@@ -144,10 +161,12 @@ nav{
     width: auto;
     float: left;
     border-color: green;
+    margin-right: 30px;
 }
 
 .notes p{
     text-align: justify;
+    font-size: 20px;
 }
 
 .enquiry{
@@ -160,17 +179,24 @@ nav{
     padding-right: 10px;
     padding-left: 10px;
     border-radius: 10px;
-    box-shadow: 5px 5px 5px 5px rgb(210, 215, 217)
+    box-shadow: 5px 5px 5px 5px rgb(210, 215, 217);
+    width: 40vw;
 }
 
 .form-group{
     display: flex;
     flex-direction: column;
     align-content: center;
+    margin-top: 15px;
+}
+
+.form-group label{
+    margin-bottom: 5px;
 }
 
 .form-group input{
     margin-bottom: 25px;
+    height: 30px;
 }
 
 .submit-button{
@@ -184,4 +210,78 @@ nav{
 footer{
     height: 50px;
     background-color: antiquewhite;
+}
+
+@media screen and (max-width: 1200px) {
+    nav{
+        padding-right: 5rem;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .des-item{
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-left: 40px;
+    }
+
+    .form-group{
+        margin-top: 10px;
+        height: 80vh;
+    }
+
+    .submit-button{
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav{
+        padding-right: 1.15rem;
+    }
+
+    .des-item{
+        grid-template-columns: repeat(2, 300px);
+        margin-left: 40px;
+    }
+
+    .notes{
+        width: 700px;
+    }
+
+    .notes p{
+        font-size: 15px;
+    }
+
+    .enquiry{
+        width: 50vw;
+    }
+
+    .form-group{
+        margin-top: 10px;
+        height: 100vh;
+    }
+
+}
+
+@media screen and (max-width: 600px){
+    .notes{
+        width: 550px;
+    }
+
+    .notes p{
+        font-size: 15px;
+    }
+
+    .enquiry{
+        width: 60vw;
+    }
+
+    .enquiry h1{
+        margin-top: 10px;
+    }
+
+    .form-group{
+        margin-top: 10px;
+        height: 110vh;
+    }
 }
